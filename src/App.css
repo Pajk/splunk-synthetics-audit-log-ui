@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f3f7;
+}
+
+#root {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+label {
+  flex: 0 0 150px;
+  text-align: right;
+  margin-right: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+input, select  {
+  flex: 1;
+  max-width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: #000;
+}
+
+select {
+  max-width: 218px;
+}
+
+.question-mark {
+  display: inline-block;
+  margin-left: 5px;
+  color: #007db8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  left: 410px;
+  top: 0;
+  white-space: nowrap;
+}
+
+.question-mark:hover + .tooltip,
+.question-mark:focus + .tooltip {
+  display: block;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding: 12px 22px 13px;
+  min-width: 108px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  white-space: nowrap;
+  background-image: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ce0070;
+  border-color: #ce0070;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #a8005b;
+  border-color: #a8005b;
+}
+
+.response {
+  margin-top: 2rem;
+  /* background: #f4f4f4; */
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  text-align: left;
+}
+
+pre {
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
